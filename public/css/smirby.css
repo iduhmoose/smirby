@@ -1,0 +1,132 @@
+header {
+  text-align:center;
+  padding-top: 0.5rem;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > h1 {
+  padding: 1rem 6rem 0 6rem;
+}
+
+h1 {
+  font-size: large;
+}
+
+h2 {
+  font-size: medium;
+}
+
+h3 {
+  font-size: medium;
+  text-align: left;
+}
+
+section {
+  margin-top: 1rem;
+}
+
+#myProfile {
+  float: left;
+}
+
+.table {
+  text-align: center;
+}
+
+.profile-icon {
+  width: 11vw;
+}
+
+.settings {
+  width: 10vw;
+  float: right;
+}
+
+.myChores {
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 1rem;
+}
+
+.chore-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: white;
+  height: 75px;
+  width: 95%;
+  margin: auto;
+  margin-top: 0.5rem;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.chore-card-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 95%;
+  margin: auto;
+  margin-top: 0.5rem;
+  text-align: left;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+hr.divider {
+  margin:0.5rem;
+}
+
+.chore-card p, .chore-card-2 p {
+  padding-left: 1rem;
+  flex-grow: 1;
+  margin:0;
+}
+
+.chore-icon {
+  background: #E5E5E5;
+  border-radius: 50%;
+  width: 12vw;
+  padding: 0.4rem;
+}
+
+.today {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+}
+
+.active-date {
+  background: #EDEDED;
+  border-radius: 50%;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+}
+
+.footer {
+  background-color: white;
+  box-shadow: 0px 0px 20px #d2d2d2;
+  padding: 1rem;
+}
+
+.footer img {
+  opacity: 0.3;
+}
+
+.active-footer {
+  opacity: 1 !important;
+}
+
+.profile-chores {
+  width:5vw;
+  margin-left: 0.5rem;
+}
+
+button {
+  border-radius: 5px;
+  width: 90vw;
+  margin:0.5rem;
+  background:white;
+}
