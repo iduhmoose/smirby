@@ -27,6 +27,11 @@ section {
   margin-top: 1rem;
 }
 
+#month {
+  text-align: center;
+  font-weight: bold;
+}
+
 #myProfile {
   float: left;
 }
@@ -115,14 +120,28 @@ hr.divider {
   opacity: 0.3;
 }
 
-.active-footer {
+.active-icon {
   opacity: 1 !important;
 }
 
 .profile-chores {
   width:5vw;
+  opacity: 0.5;
   margin-left: 0.5rem;
 }
+
+.assigned {
+  display: inline-block;
+}
+
+.chore-container {
+  text-align: center;
+}
+
+.chore-container .chore-card-2 {
+  justify-content: normal !important;
+}
+
 
 button {
   border-radius: 5px;

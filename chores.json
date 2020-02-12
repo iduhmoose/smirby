@@ -1,0 +1,28 @@
+{
+  "chores": [
+    {
+      "name": "Take out the trash",
+      "id":"a1",
+      "iconURL":"/images/trash.svg",
+      "frequency": ["Mon","Thu"],
+      "assigned": ["A","B","C","D"],
+      "completed": false
+    },
+    {
+      "name": "Clean the kitchen",
+      "id":"a2",
+      "iconURL":"/images/clean.svg",
+      "frequency": ["Sun"],
+      "assigned": ["B"],
+      "completed": false
+    },
+    {
+      "name": "Vacuum the living room",
+      "id":"a3",
+      "iconURL":"/images/vacuum.svg",
+      "frequency": ["Sun"],
+      "assigned": ["A","C"],
+      "completed": false
+    }
+  ]
+}

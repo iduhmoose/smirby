@@ -14,99 +14,50 @@
 		<img class="settings" src="/images/settings.png" alt="settings">
 	</header>
 
-	<div class="container" style="text-align: center;">
+	<div class="container chore-container">
 		<button type="button" name="button">+ Add Chore</button>
-		<div class="chore-card-2" style="justify-content: flex-start; !important">
-			<img class="profile-icon" src="/images/clean.svg" alt="clean">
-			<div>
-				<p><strong>Clean the kitchen</strong></p>
-				<table class="table table-borderless" style="margin: 0 0 0 0.5rem;">
-					<tbody>
-						<tr>
-							<td scope="row"><span>S</span></td>
-							<td><span class="">M</span></td>
-							<td><span class="">T</span></td>
-							<td><span class="today active-date">W</span></td>
-							<td><span class="">T</span></td>
-							<td><span class="">F</span></td>
-							<td><span>S</span></td>
-						</tr>
-					</tbody>
-				</table>
-				<p style="display:inline-block;">Assigned to:
-					<img class="profile-chores" src="/images/profile.png" alt="profile">
-					<img class="profile-chores" src="/images/profile.png" alt="profile">
-					<img class="profile-chores" src="/images/profile.png" alt="profile">
-					<img class="profile-chores" src="/images/profile.png" alt="profile">
-				</p>
+
+		{{#each chores}}
+			<div class="chore-card-2">
+				<img class="profile-icon" src="{{iconURL}}" alt="clean">
+				<div id="{{id}}">
+					<p><strong>{{name}}</strong></p>
+					<table class="table table-borderless" style="margin: 0 0 0 0.5rem;">
+						<tbody>
+							<tr>
+								<td scope="row"><span>S</span></td>
+								<td><span class="">M</span></td>
+								<td><span class="">T</span></td>
+								<td><span class="">W</span></td>
+								<td><span class="">T</span></td>
+								<td><span class="">F</span></td>
+								<td><span>S</span></td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="assigned">Assigned to:
+						<img class="profile-chores" src="/images/profile.png" alt="profile">
+						<img class="profile-chores" src="/images/profile.png" alt="profile">
+						<img class="profile-chores" src="/images/profile.png" alt="profile">
+						<img class="profile-chores" src="/images/profile.png" alt="profile">
+					</p>
+				</div>
 			</div>
-		</div>
-		<hr>
-		<div class="chore-card-2" style="justify-content: flex-start; !important">
-			<img class="profile-icon" src="/images/vacuum.svg" alt="clean">
-			<div>
-				<p><strong>Vacuum the living room</strong></p>
-				<table class="table table-borderless" style="margin: 0 0 0 0.5rem;">
-					<tbody>
-						<tr>
-							<td scope="row"><span>S</span></td>
-							<td><span class="">M</span></td>
-							<td><span class="">T</span></td>
-							<td><span class="">W</span></td>
-							<td><span class="">T</span></td>
-							<td><span class="today active-date">F</span></td>
-							<td><span>S</span></td>
-						</tr>
-					</tbody>
-				</table>
-				<p style="display:inline-block;">Assigned to:
-					<img class="profile-chores" src="/images/profile.png" alt="profile">
-					<img class="profile-chores" src="/images/profile.png" alt="profile">
-					<img class="profile-chores" src="/images/profile.png" alt="profile">
-					<img class="profile-chores" src="/images/profile.png" alt="profile">
-				</p>
-			</div>
-		</div>
-		<hr>
-		<div class="chore-card-2" style="justify-content: flex-start; !important">
-			<img class="profile-icon" src="/images/clean.svg" alt="clean">
-			<div>
-				<p><strong>Take out the trash</strong></p>
-				<table class="table table-borderless" style="margin: 0 0 0 0.5rem;">
-					<tbody>
-						<tr>
-							<td scope="row"><span class="today active-date">S</span></td>
-							<td><span class="">M</span></td>
-							<td><span class="">T</span></td>
-							<td><span class="today active-date">W</span></td>
-							<td><span class="">T</span></td>
-							<td><span class="">F</span></td>
-							<td><span>S</span></td>
-						</tr>
-					</tbody>
-				</table>
-				<p style="display:inline-block;">Assigned to:
-					<img class="profile-chores" src="/images/profile.png" alt="profile">
-					<img class="profile-chores" src="/images/profile.png" alt="profile">
-					<img class="profile-chores" src="/images/profile.png" alt="profile">
-					<img class="profile-chores" src="/images/profile.png" alt="profile">
-				</p>
-			</div>
-		</div>
-		<hr>
+			<hr>
+		{{/each}}
+
 	</div>
 
-
-
   <nav class="navbar fixed-bottom footer">
-		<a href="/"><img class="nav-logo" src="/images/calendar.png" alt="calendar"></a>
-		<a href="/chores"><img class="nav-logo active-footer" src="/images/chores.png" alt="chores"></a>
+		<a href="/calendar"><img class="nav-logo" src="/images/calendar.png" alt="calendar"></a>
+		<a href="/chores"><img class="nav-logo active-icon" src="/images/chores.png" alt="chores"></a>
 		<a href="#"><img class="nav-logo" src="/images/home.png" alt="home"></a>
 		<a href="#"><img class="nav-logo" src="/images/trade.png" alt="trade"></a>
 		<a href="#"><img class="nav-logo" src="/images/activity.png" alt="activity"></a>
 	</nav>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/js/smirby.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>

@@ -1,0 +1,112 @@
+<html>
+<head>
+	<title>Smirby</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/smirby.css">
+</head>
+<body>
+
+	<header>
+		<img id="myProfile" class="profile-icon" src="/images/profile.png" alt="profile">
+		<h1>Calendar</h1>
+		<img class="settings" src="/images/settings.png" alt="settings">
+	</header>
+
+	<div class="container-fluid">
+
+		<hr>
+		<h2 id="month" style="text-align: center;"></h2>
+		<nav>
+			<ul class="pagination justify-content-center">
+				<li class="page-item">
+					<a class="page-link" href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+
+				<li class="page-item"><a class="page-link" href="#">This Week's Chores</a></li>
+
+				<li class="page-item">
+					<a class="page-link" href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<section class="calendar">
+			<table class="table table-borderless table-sm">
+				<thead>
+					<tr>
+						<th scope="col" id="sun">Sun</th>
+						<th scope="col" id="mon">Mon</th>
+						<th scope="col" id="tue">Tue</th>
+						<th scope="col" id="wed">Wed</th>
+						<th scope="col" id="thu">Thu</th>
+						<th scope="col" id="fri">Fri</th>
+						<th scope="col" id="sat">Sat</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr id="calendarRow">
+						<td scope="row"><span></span></td>
+						<td><span></span></td>
+						<td><span></span></td>
+						<td><span></span></td>
+						<td><span></span></td>
+						<td><span></span></td>
+						<td><span></span></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="myChores">
+			<h3><strong>TODAY</strong></h3>
+			<div class="chore-card">
+				<img class="chore-icon" src="/images/trash.svg" alt="icon">
+				<p>Take out the trash</p>
+				<img style="width: 8vw;" src="/images/unchecked.svg" alt="unchecked">
+			</div>
+			<div class="chore-card">
+				<img class="chore-icon" src="/images/clean.svg" alt="icon">
+				<p>Clean the kitchen</p>
+				<img style="width: 8vw;" src="/images/unchecked.svg" alt="unchecked">
+			</div>
+		</section>
+
+		<section>
+			<h3><strong>Amanda's Chores</strong></h3>
+			<hr class="divider">
+			<div class="chore-card-2">
+				<img class="profile-icon" src="/images/profile.png" alt="profile">
+				<p>Clean the kitchen</p>
+				<img style="width: 8vw;" src="/images/remind.svg" alt="remind">
+			</div>
+			<hr class="divider">
+			<div class="chore-card-2">
+				<img class="profile-icon" src="/images/profile.png" alt="profile">
+				<p>Vacuum the living room</p>
+				<img style="width: 8vw;" src="/images/remind.svg" alt="remind">
+			</div>
+		</section>
+
+	</div>
+
+	<nav class="navbar fixed-bottom footer">
+		<a href="/calendar"><img class="nav-logo active-icon" src="/images/calendar.png" alt="calendar"></a>
+		<a href="/chores"><img class="nav-logo" src="/images/chores.png" alt="chores"></a>
+		<a href="#"><img class="nav-logo" src="/images/home.png" alt="home"></a>
+		<a href="#"><img class="nav-logo" src="/images/trade.png" alt="trade"></a>
+		<a href="#"><img class="nav-logo" src="/images/activity.png" alt="activity"></a>
+	</nav>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/js/calendar.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
