@@ -31,5 +31,4 @@ $(document).ready(function() {
   } else if (month == 3) {
     $("#month").text("APRIL");
   }
-
 })
