@@ -100,14 +100,28 @@ hr.divider {
 
 .today {
   border: 1px solid black;
-  border-radius: 50%;
-  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  display: inline-block;
+  line-height: 1.6em;
+  width: 1.6em;
+}
+
+#calendarRow span {
+  display: inline-block;
+  line-height: 1.6em;
+  width: 1.6em;
 }
 
 .active-date {
   background: #EDEDED;
-  border-radius: 50%;
-  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  display: inline-block;
+  line-height: 1.6em;
+  width: 1.6em;
 }
 
 .footer {
@@ -142,10 +156,14 @@ hr.divider {
   justify-content: normal !important;
 }
 
-
 button {
   border-radius: 5px;
   width: 90vw;
   margin:0.5rem;
   background:white;
+}
+
+.modal-title {
+  text-align: center;
+  font-weight: bold;
 }

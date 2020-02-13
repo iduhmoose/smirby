@@ -22,7 +22,7 @@
 		<nav>
 			<ul class="pagination justify-content-center">
 				<li class="page-item">
-					<a class="page-link" href="#" aria-label="Previous">
+					<a class="page-link" id="prevWeek" href="#" aria-label="Previous">
 						<span aria-hidden="true">&laquo;</span>
 					</a>
 				</li>
@@ -30,7 +30,7 @@
 				<li class="page-item"><a class="page-link" href="#">This Week's Chores</a></li>
 
 				<li class="page-item">
-					<a class="page-link" href="#" aria-label="Next">
+					<a class="page-link" id="nextWeek" href="#" aria-label="Next">
 						<span aria-hidden="true">&raquo;</span>
 					</a>
 				</li>
@@ -83,17 +83,17 @@
 		  <div class="modal-dialog modal-dialog-centered" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <h5 class="modal-title">Take a picture of your completed chore!</h5>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        <button type="button" style="width: 15vw;" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
-		      <div class="modal-body">
+		      <div class="modal-body" style="text-align:center;">
+						<p><strong>Take a picture of your completed chore!</strong></p>
 						<input type="file" accept="image/*;capture=camera">
 		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-		        <button id="confirm" type="button" class="btn btn-primary" data-dismiss="modal">Upload</button>
+		      <div class="modal-footer" style="justify-content: space-between;">
+		        <button type="button" class="btn btn-secondary" style="width: 47%;" data-dismiss="modal">Cancel</button>
+		        <button id="confirm" type="button" class="btn btn-primary" style="width: 47%;" data-dismiss="modal">Complete!</button>
 		      </div>
 		    </div>
 		  </div>
@@ -105,13 +105,13 @@
 			<div class="chore-card-2">
 				<img class="profile-icon" src="/images/profile.png" alt="profile">
 				<p>Clean the kitchen</p>
-				<img style="width: 8vw;" src="/images/remind.svg" alt="remind">
+				<img class="remind" style="width: 8vw;" src="/images/remind.svg" alt="remind">
 			</div>
 			<hr class="divider">
 			<div class="chore-card-2">
 				<img class="profile-icon" src="/images/profile.png" alt="profile">
 				<p>Vacuum the living room</p>
-				<img style="width: 8vw;" src="/images/remind.svg" alt="remind">
+				<img class="remind" style="width: 8vw;" src="/images/remind.svg" alt="remind">
 			</div>
 		</section>
 
