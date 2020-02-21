@@ -52,13 +52,13 @@
 				</thead>
 				<tbody>
 					<tr id="calendarRow">
-						<td scope="row"><span></span></td>
-						<td><span></span></td>
-						<td><span></span></td>
-						<td><span></span></td>
-						<td><span></span></td>
-						<td><span></span></td>
-						<td><span></span></td>
+						<td scope="row"><span class="sun"></span></td>
+						<td><span class="mon"></span></td>
+						<td><span class="tue"></span></td>
+						<td><span class="wed"></span></td>
+						<td><span class="thu"></span></td>
+						<td><span class="fri"></span></td>
+						<td><span class="sat"></span></td>
 					</tr>
 				</tbody>
 			</table>
@@ -66,7 +66,7 @@
 
 		<section class="myChores">
 			<h3><strong>TODAY</strong></h3>
-			<div class="chore-card">
+			<!--<div class="chore-card">
 				<img class="chore-icon" src="/images/trash.svg" alt="icon">
 				<p>Take out the trash</p>
 				<img class="checkmark" style="width: 8vw;" src="/images/unchecked.svg" alt="unchecked">
@@ -75,7 +75,7 @@
 				<img class="chore-icon" src="/images/clean.svg" alt="icon">
 				<p>Clean the kitchen</p>
 				<img class="checkmark" style="width: 8vw;" src="/images/unchecked.svg" alt="unchecked">
-			</div>
+			</div>-->
 		</section>
 
 		<!-- Modal -->
@@ -99,20 +99,21 @@
 		  </div>
 		</div>
 
-		<section>
-			<h3><strong>Amanda's Chores</strong></h3>
-			<hr class="divider">
-			<div class="chore-card-2">
-				<img class="profile-icon" src="/images/profile.png" alt="profile">
-				<p>Clean the kitchen</p>
-				<img class="remind" style="width: 8vw;" src="/images/remind.svg" alt="remind">
+		<section class="otherChores">
+			<div class="b">
+				<h3 style="display:none;"><strong>Maggie's Chores</strong></h3>
+
 			</div>
 			<hr class="divider">
-			<div class="chore-card-2">
-				<img class="profile-icon" src="/images/profile.png" alt="profile">
-				<p>Vacuum the living room</p>
-				<img class="remind" style="width: 8vw;" src="/images/remind.svg" alt="remind">
+			<div class="c">
+				<h3 style="display:none;"><strong>Sara's Chores</strong></h3>
 			</div>
+			<hr class="divider">
+			<div class="d">
+				<h3 style="display:none;"><strong>Emily's Chores</strong></h3>
+
+			</div>
+			<hr class="divider">
 		</section>
 
 	</div>
@@ -125,7 +126,7 @@
 		<a href="#"><img class="nav-logo" src="/images/activity.png" alt="activity"></a>
 	</nav>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/js/calendar.js"></script>
 	<script src="/js/smirby.js" type="text/javascript"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
