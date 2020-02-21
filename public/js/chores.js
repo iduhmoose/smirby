@@ -3,9 +3,14 @@
 var choreList;
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
-  $.getJSON("https://api.myjson.com/bins/d49qw", function(json) {
+  $.get("../chores.json", function(data) {
+    choreList = data;
+    highlightChores(choreList);
+  });
+
+/*  $.getJSON("https://api.myjson.com/bins/d49qw", function(json) {
     highlightChores(json);
- });
+  });*/
 
   $("#addChoreButton").click(function() {
     $("#addChore").modal("show");
@@ -51,34 +56,11 @@ $(document).ready(function() {
     choreList.chores.push(newChore);
     console.log(choreList);
 
+    $.post("/chores", choreList);
+
     createChore(newChore);
     highlightChores(choreList);
-/*
-    var data = JSON.stringify(choreList);
 
-    $.ajax({
-        url: "https://api.myjson.com/bins/d49qw",
-        type: "POST",
-        data: data,
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-        success: function (data, textStatus, jqXHR) {
-
-            // do update
-            $.ajax({
-                url: "https://api.myjson.com/bins/d49qw",
-                type: "PUT",
-                data: data,
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                success: function (data, textStatus, jqXHR) {
-                    console.log("UPDATED!!!");
-                    highlightChores();
-                }
-            });
-        }
-    });
-    */
     $("#addChore").modal("hide");
   });
 });
@@ -92,8 +74,6 @@ function createChore(chore) {
 }
 
 function highlightChores(json) {
-  console.log(json);
-  choreList = json;
 
   for (let idx in json["chores"]) {
     let currentChore = json["chores"][idx];
