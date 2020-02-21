@@ -43,6 +43,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 app.get('/', index.view);
+app.get('/login', index.view);
 app.get('/home', home.view);
 app.get('/chores', chores.view);
 app.get('/calendar', calendar.view);
