@@ -18,15 +18,16 @@
 		<hr>
 
     <img class="big-icon" id="logo" src="/images/logo.png" alt="profile">
-    	<input type="text" class="form-control" id="name" placeholder="Username" name="Username">
-			<input type="text" class="form-control" id="description" placeholder="Password" name="Password">
+    	<input type="text" class="input" id="name" placeholder="Username" name="Username">
+			<input type="text" class="input" id="description" placeholder="Password" name="Password">
 
 		<hr>
 
     <button class="options" type="button" name="button">Nevermind</button>
-    <button class="options" id="signUp" type="button" name="button">Sign In</button>
+    <button class="options" id="signUp" type="button" name="button" onclick="window.location.href = '/home'">Sign In</button>
 
-		<p class="facebookLogin">
+
+		<p style="margin-top:1em" class="facebookLogin">
 			Or login through Facebook
 			<fb:login-button
 				scope="public_profile,email"

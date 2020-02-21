@@ -38,11 +38,11 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+app.get('/home', index.view);
 app.get('/chores', chores.view);
 app.get('/calendar', calendar.view);
 app.get('/trade', trade.view);
-app.get('/login', login.view);
+app.get('/', login.view);
 // Example route
 // app.get('/users', user.list);
 
