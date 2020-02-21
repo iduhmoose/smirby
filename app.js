@@ -42,12 +42,12 @@ app.use(bodyParser.urlencoded({extended: false}));
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
-
+app.get('/', login.view);
 app.get('/home', index.view);
 app.get('/chores', chores.view);
 app.get('/calendar', calendar.view);
 app.get('/trade', trade.view);
-app.get('/', login.view);
+
 // Example route
 // app.get('/users', user.list);
 
