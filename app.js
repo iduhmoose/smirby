@@ -12,7 +12,7 @@ var index = require('./routes/index');
 var calendar = require('./routes/calendar');
 var chores = require('./routes/chores');
 var trade = require('./routes/trade');
-var login = require('./routes/login');
+var home = require('./routes/home');
 // Example route
 // var user = require('./routes/user');
 
@@ -42,8 +42,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
-app.get('/', login.view);
-app.get('/home', index.view);
+app.get('/', index.view);
+app.get('/home', home.view);
 app.get('/chores', chores.view);
 app.get('/calendar', calendar.view);
 app.get('/trade', trade.view);
