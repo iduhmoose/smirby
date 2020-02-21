@@ -6,6 +6,9 @@ header {
   justify-content: center;
 }
 
+body {
+  margin-bottom: 69px;
+}
 header > h1 {
   padding: 1rem 6rem 0 6rem;
 }
