@@ -60,6 +60,7 @@ $(document).ready(function() {
     if ($(this).hasClass("reminded")) {
       alert("You've already sent a reminder! Please wait 24 hours to send another one.");
     }
+    alert("A reminder has been sent!");
     $(this).css("opacity", "0.3");
     $(this).addClass("reminded");
   });
@@ -318,6 +319,7 @@ $("#prevWeek").click(function () {
 
   for (let i = 1; i < 8; i++) {
     let id = "#calendarRow td:nth-child("+ i +") span";
+  
     $(id).text(nextWeek);
 
     if (nextWeek == date) {

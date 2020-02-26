@@ -12,50 +12,58 @@
   <header>
 		<img id="myProfile" class="profile-icon" src="/images/profile.png" alt="profile">
 		<h1>Trade</h1>
-		<img class="settings" src="/images/settings.png" alt="settings">
+		<!--<img class="settings" src="/images/settings.png" alt="settings">-->
 	</header>
+	<hr>
 
-	<div class="container trade-container">
+	<div id="sendview" class="container-fluid" style="display:block;">
+		<button class="send" type="button" name="button">Send Trade Request</button>
+		<button id="view" type="button" name="button">View Trade Requests</button>
+	</div>
 
-    <hr>
+
+	<div class="container send-container" style="display:none;">
+		<p>My Chores</p>
+		<p>Select the chores you would like to trade with someone else!</p>
+    {{#each chores}}
+			{{#if_eq assigned 'A'}}
+		  	<div class="trade-card">
+					<img class="profile-icon" src="/images/profile.png" alt="clean">
+					<div id="{{id}}">
+						<p><strong>{{name}}</strong></p>
+		      </div>
+		    </div>
+			{{/if_eq}}
+		{{/each}}
+		<button class="options" type="button" name="button">Nevermind</button>
+		<button class="options selected" type="button" name="button">Trade</button>
+	</div>
+
+	<div class="container trade-container" style="display:none;">
+		<button class="send" type="button" name="button">Go Back</button>
+		<p>Select the following trade requests to decline or accept them.</p>
     {{#each chores}}
   		<div class="trade-card">
 				<img class="profile-icon" src="/images/profile.png" alt="clean">
 				<div id="{{id}}">
   				<p><strong>{{name}}</strong></p>
-  				<table class="table table-borderless" style="margin: 0 0 0 0.5rem;">
-  					<tbody>
-  						<tr>
-  							<td scope="row"><span>S</span></td>
-  							<td><span class="">M</span></td>
-  							<td><span class="">T</span></td>
-  							<td><span class="">W</span></td>
-  							<td><span class="">T</span></td>
-  							<td><span class="">F</span></td>
-  							<td><span>S</span></td>
-  						</tr>
-  					</tbody>
-  				</table>
         </div>
     </div>
 		{{/each}}
 		<button class="options" id="decline" type="button" name="button">Decline</button>
-		<button class="options" id="selected" type="button" name="button">Accept</button>
+		<button class="options selected" type="button" name="button">Accept</button>
 	</div>
 
 
-
-
-  <nav class="navbar fixed-bottom footer">
-		<a href="/calendar"><img class="nav-logo" src="/images/calendar.png" alt="calendar"></a>
-		<a href="/chores"><img class="nav-logo" src="/images/chores.png" alt="chores"></a>
-		<a href="/home"><img class="nav-logo" src="/images/home.png" alt="home"></a>
-		<a href="/trade"><img class="nav-logo active-icon" src="/images/trade.png" alt="trade"></a>
-		<!--<a href="#"><img class="nav-logo" src="/images/activity.png" alt="activity"></a>-->
+	<nav class="navbar fixed-bottom footer">
+		<a href="/home"><img class="nav-logo" src="/images/home.png" alt="home"><p>Home</p></a>
+		<a href="/calendar"><img class="nav-logo" src="/images/calendar.png" alt="calendar"><p>Calendar</p></a>
+		<a href="/chores"><img class="nav-logo" src="/images/chores.png" alt="chores"><p>Chores</p></a>
+		<a href="/trade"><img class="nav-logo active-icon" src="/images/trade.png" alt="trade"><p style="color:black;">Trade</p></a>
+<!--<a href="#"><img class="nav-logo" src="/images/activity.png" alt="activity"></a>-->
 	</nav>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="/js/smirby.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/js/trade.js"></script>

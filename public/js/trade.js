@@ -13,9 +13,13 @@ $(document).ready(function() {
      }
  });
 
- $("#selected").click(function () {
+ $(".trade-container .selected").click(function () {
    alert("You've accepted the trade!");
    $(".select").remove();
+ });
+
+ $(".send-container .selected").click(function () {
+   alert("You've sent a trade request!");
  });
 
  $("#decline").click(function () {
@@ -23,4 +27,24 @@ $(document).ready(function() {
    $(".select").css("border", "2px solid #F1F1F1");
    $(".select").removeClass("select");
  });
+
+ $("#view").click(function() {
+   $("#sendview").css('display','none');
+   $(".trade-container").css('display','block');
+ });
+
+ $("#sendview .send").click(function() {
+   $("#sendview").css('display','none');
+   $(".send-container").css('display','block');
+ });
+
+ $(".send-container button:first").click(function() {
+   $("#sendview").css('display','block');
+   $(".send-container").css('display','none');
+ });
+
+ $(".trade-container .send").click(function() {
+   $("#sendview").css('display','block');
+   $(".trade-container").css('display','none');
+ })
 });
