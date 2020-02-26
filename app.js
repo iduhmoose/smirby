@@ -8,6 +8,7 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
+
 var index = require('./routes/index');
 var calendar = require('./routes/calendar');
 var chores = require('./routes/chores');
@@ -38,6 +39,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+var hbs = require('handlebars');
+
+hbs.registerHelper('if_eq', function(a, b, opts) {
+  if (a.indexOf(b) >= 0) {
+    return opts.fn(this);
+  } else {
+    return opts.inverse(this);
+  }
+});
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
