@@ -14,6 +14,7 @@ var calendar = require('./routes/calendar');
 var chores = require('./routes/chores');
 var trade = require('./routes/trade');
 var home = require('./routes/home');
+var choresAlt = require('./routes/choresAlt');
 // Example route
 // var user = require('./routes/user');
 
@@ -58,6 +59,7 @@ app.get('/home', home.view);
 app.get('/chores', chores.view);
 app.get('/calendar', calendar.view);
 app.get('/trade', trade.view);
+app.get('/choresAlt', choresAlt.view);
 
 // Example route
 // app.get('/users', user.list);
