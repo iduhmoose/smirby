@@ -21,9 +21,21 @@ $(document).ready(function() {
   });
 
   $("#add").click(function () {
-    let choreName = $("#choreName").val();
+    /*let choreName = $("#choreName").val();
     let imageURL = $("input[name='icon']:checked").val();
+    */
+
+    let choreName = $('#choreForm option:selected').text();
     console.log(choreName);
+    let imageURL;
+    if (choreName.indexOf("Wipe") >= 0 || choreName.indexOf("Clean") >= 0) {
+      imageURL = '/images/clean.svg';
+    } else if (choreName.indexOf("trash") >= 0) {
+      imageURL = '/images/trash.svg';
+    } else {
+      imageURL = '/images/vacuum.svg';
+    }
+    
     console.log(imageURL);
     let freq = [];
     let assigned = [];

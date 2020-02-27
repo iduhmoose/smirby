@@ -24,38 +24,59 @@
 		  <div class="modal-dialog modal-dialog-centered" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-						<h2>Add Chore</h2>
+						<h2 class="modal-title">ADD CHORE</h2>
 		        <button type="button" style="width: 15vw;" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
-		      <div class="modal-body" style="text-align:left;">
+		      <div class="modal-body" style="text-align:left; padding-bottom:0;">
 				    <form id="choreForm" name="choreForm" onsubmit="return false">
-							<label for="name">Chore Name: </label><input id="choreName" type="text" name="name" required> <br>
+							<p>Select a chore:</p>
+							<select id="chore">
+							  <option value="Take out the trash">Take out the trash</option>
+							  <option value="Vacuum the living room">Vacuum the living room</option>
+							  <option value="Clean the kitchen">Clean the kitchen</option>
+							  <option value="Clean the bathroom">Clean the bathroom</option>
+								<option value="Clean the bathroom">Wipe the counters</option>
+								<option value="Clean the bathroom">Wipe the dining table</option>
+							</select><br><br>
 
-							<label for="icon">Choose an icon: </label><br>
-								<input type="radio" name="icon" value="/images/trash.svg"><img class="profile-icon" src="/images/trash.svg" alt="trash">
-								<input type="radio" name="icon" value="/images/clean.svg"><img class="profile-icon" src="/images/clean.svg" alt="clean">
-								<input type="radio" name="icon" value="/images/vacuum.svg"><img class="profile-icon" src="/images/vacuum.svg" alt="vacuum">
+					<!--<p>Chore Name: </p>
+							<input id="choreName" type="text" name="name" required> <br><br>
 
-				      <label for="frequency">How often should this chore be done? Every...</label><br>
-								<input id="sun" type="checkbox" name="day" value="Sun"><label for="sun">Sunday</label><br>
-								<input id="mon" type="checkbox" name="day" value="Mon"><label for="mon">Monday</label><br>
-								<input id="tue" type="checkbox" name="day" value="Tue"><label for="tue">Tuesday</label><br>
-								<input id="wed" type="checkbox" name="day" value="Wed"><label for="wed">Wednesday</label><br>
-								<input id="thu" type="checkbox" name="day" value="Thu"><label for="thu">Thursday</label><br>
-								<input id="fri" type="checkbox" name="day" value="Fri"><label for="fri">Friday</label><br>
-								<input id="sat" type="checkbox" name="day" value="Sat"><label for="sat">Saturday</label><br>
-							<label for="assign">Who is responsible for this chore?</label><br>
-								<input id="a" type="checkbox" name="roomie" value="A"><label for="a">Lisa</label><br>
-								<input id="b" type="checkbox" name="roomie" value="B"><label for="b">Maggie</label><br>
-								<input id="c" type="checkbox" name="roomie" value="C"><label for="c">Sara</label><br>
-								<input id="d" type="checkbox" name="roomie" value="D"><label for="d">Emily</label><br>
+							<p>Choose an icon: </p>
+							<div style="display:flex; justify-content: space-evenly; align-items:center; margin-bottom: 0.5rem;">
+								<input type="radio" id="icon1" name="icon" value="/images/trash.svg"><label for="icon1"><img class="profile-icon" src="/images/trash.svg" alt="trash"></label>
+								<input type="radio" id="icon2" name="icon" value="/images/clean.svg"><label for="icon2"><img class="profile-icon" src="/images/clean.svg" alt="clean"></label>
+								<input type="radio" id="icon3" name="icon" value="/images/vacuum.svg"><label for="icon3"><img class="profile-icon" src="/images/vacuum.svg" alt="vacuum"></label>
+							</div>
 
-								<div class="modal-footer" style="justify-content: space-between;">
-									<input type="cancel" name="cancel" value="Cancel" class="btn btn-secondary" style="width: 47%;" id="cancel">
-						      <input type="submit" name="add" value="Add" class="btn btn-primary" style="width: 47%;" id="add">
-					     	</div>
+						-->
+							<p>Complete on: <br><em style="font-size:small;">Click to select days.</em></p><br>
+							<table class="table table-borderless table-sm">
+								<tbody>
+									<tr class="freq">
+										<td scope="col"><input id="sun" type="checkbox" name="day" value="Sun"><label for="sun">Sun</label></td>
+										<td scope="col"><input id="mon" type="checkbox" name="day" value="Mon"><label for="mon">Mon</label></td>
+										<td scope="col"><input id="tue" type="checkbox" name="day" value="Tue"><label for="tue">Tue</label></td>
+										<td scope="col"><input id="wed" type="checkbox" name="day" value="Wed"><label for="wed">Wed</label></td>
+										<td scope="col"><input id="thu" type="checkbox" name="day" value="Thu"><label for="thu">Thu</label></td>
+										<td scope="col"><input id="fri" type="checkbox" name="day" value="Fri"><label for="fri">Fri</label></td>
+										<td scope="col"><input id="sat" type="checkbox" name="day" value="Sat"><label for="sat">Sat</label></td>
+									</tr>
+								</tbody>
+							</table>
+
+							<p>Assign to: <br><em style="font-size:small;">Click to select roommates.</em></p><br>
+							<div style="display:flex; justify-content: space-evenly; align-items:center; margin-bottom: 0.5rem;">
+								<input id="a" type="checkbox" name="roomie" value="A"><label for="a"><img class="profile-icon" src="/images/profile.png" alt="profile"><br>Lisa</label>
+								<input id="b" type="checkbox" name="roomie" value="B"><label for="b"><img class="profile-icon" src="/images/profile.png" alt="profile"><br>Maggie</label>
+								<input id="c" type="checkbox" name="roomie" value="C"><label for="c"><img class="profile-icon" src="/images/profile.png" alt="profile"><br>Sara</label>
+								<input id="d" type="checkbox" name="roomie" value="D"><label for="d"><img class="profile-icon" src="/images/profile.png" alt="profile"><br>Emily</label>
+							</div>
+							<div class="modal-footer" style="justify-content: center; padding-bottom:0;">
+					      <input type="submit" name="add" value="Add" class="btn btn-primary" style="width: 47%;" id="add">
+				     	</div>
 				    </form>
 		      </div>
 		    </div>
@@ -107,7 +128,6 @@
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/js/chores.js"></script>
-	<script src="/js/smirby.js" type="text/javascript"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>

@@ -14,6 +14,10 @@ h1 {
   font-size: large;
 }
 
+p {
+  margin:0;
+}
+
 #greeting {
   padding: 1rem 4rem 0 4rem !important;
 }
@@ -265,7 +269,7 @@ hr.divider {
 button {
   border-radius: 5px;
   width: 90vw;
-  margin: 0.5rem;
+  margin-bottom:0.5rem;
   background:white;
 }
 
@@ -299,4 +303,44 @@ button {
   position: absolute;
   right: 0.5rem;
   top: 0;
+}
+tr.freq td {
+  line-height: 15px;
+}
+
+#choreForm input[type="checkbox"], #choreForm input[type="radio"] {
+  display:none;
+}
+
+#choreForm label {
+  text-align:center;
+}
+
+#choreForm p {
+  font-weight: bold;
+}
+
+tr.freq label {
+  padding: 0.25rem;
+  margin:0;
+}
+
+#choreForm input[type="checkbox"]:checked+label {
+  background-color: #E7E7E7;
+  border-radius: 5px;
+}
+
+#choreForm img {
+  margin:0.5rem;
+}
+
+#choreForm input[type="radio"]:checked+label {
+  background-color: #E7E7E7;
+  border-radius: 50%;
+}
+
+#choreForm input[type="text"] {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
 }

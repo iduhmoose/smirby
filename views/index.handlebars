@@ -40,6 +40,10 @@
 			<hr>
 	    <button class="options nevermind" type="button" name="button">Nevermind</button>
 	    <button class="options signUp" type="button" name="button" onclick="window.location.href = '/home'">Log In</button>
+			<p style="margin-top:1em" class="facebookLogin">
+				Or login through Facebook
+				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+			</p>
 		</div>
 
 		<div id="signup" style="display:none;">
@@ -50,13 +54,6 @@
 	    <button class="options nevermind" type="button" name="button">Nevermind</button>
 	    <button class="options signUp" type="button" name="button" onclick="window.location.href = '/home'">Sign Up</button>
 		</div>
-
-
-
-		<p style="margin-top:1em" class="facebookLogin">
-			Or login through Facebook
-			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
-		</p>
 
 	</div>
 

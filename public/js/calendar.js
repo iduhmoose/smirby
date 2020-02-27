@@ -319,7 +319,7 @@ $("#prevWeek").click(function () {
 
   for (let i = 1; i < 8; i++) {
     let id = "#calendarRow td:nth-child("+ i +") span";
-  
+
     $(id).text(nextWeek);
 
     if (nextWeek == date) {
@@ -327,4 +327,4 @@ $("#prevWeek").click(function () {
     }
     nextWeek++;
   }
-})
+});
