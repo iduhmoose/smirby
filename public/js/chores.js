@@ -15,7 +15,7 @@ $(document).ready(function() {
 
   $("#addChoreButton").click(function() {
     $("#addChore").modal("show");
-    var timer = setInterval(myTimer, 1000);
+    var theTime = setInterval(myTimer, 1000);
   });
 
   $(".removeChore").click(function () {
@@ -27,7 +27,7 @@ $(document).ready(function() {
     let imageURL = $("input[name='icon']:checked").val();
     */
 
-    clearInterval(timer);
+    clearInterval(theTime);
     time = time.toString();
     dataLayer.push({'time': time});
     time = 0;
