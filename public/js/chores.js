@@ -1,6 +1,7 @@
 'use strict';
 
 var choreList;
+var time = 0;
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
   $.get("../chores.json", function(data) {
@@ -14,6 +15,7 @@ $(document).ready(function() {
 
   $("#addChoreButton").click(function() {
     $("#addChore").modal("show");
+    var timer = setInterval(myTimer, 1000);
   });
 
   $(".removeChore").click(function () {
@@ -25,6 +27,11 @@ $(document).ready(function() {
     let imageURL = $("input[name='icon']:checked").val();
     */
 
+    clearInterval(timer);
+    time = time.toString();
+    dataLayer.push({'time': time});
+    time = 0;
+
     let choreName = $('#choreForm option:selected').text();
     console.log(choreName);
     let imageURL;
@@ -35,7 +42,7 @@ $(document).ready(function() {
     } else {
       imageURL = '/images/vacuum.svg';
     }
-    
+
     console.log(imageURL);
     let freq = [];
     let assigned = [];
@@ -76,6 +83,10 @@ $(document).ready(function() {
     $("#addChore").modal("hide");
   });
 });
+
+function myTimer() {
+  time += 1;
+}
 
 function createChore(chore) {
   let table = "<table class='table table-borderless' style='margin: 0 0 0 0.5rem;'><tbody><tr><td scope='row'><span>S</span></td><td><span class=''>M</span></td><td><span class=''>T</span></td><td><span class=''>W</span></td><td><span class=''>T</span></td><td><span class=''>F</span></td><td><span>S</span></td></tr></tbody></table>";
