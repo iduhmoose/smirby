@@ -88,6 +88,7 @@ $(document).ready(function() {
       'event_category': 'addChore',
       'event_label': time
     });
+  });
 });
 
 
