@@ -2,6 +2,7 @@
 
 var choreList;
 var time = 0;
+var theTime;
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
   $.get("../chores.json", function(data) {
@@ -15,7 +16,7 @@ $(document).ready(function() {
 
   $("#addChoreButton").click(function() {
     $("#addChore").modal("show");
-    var theTime = setInterval(myTimer, 1000);
+    theTime = setInterval(myTimer, 1000);
   });
 
   $(".removeChore").click(function () {
