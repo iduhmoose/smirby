@@ -29,8 +29,6 @@ $(document).ready(function() {
     let imageURL = $("input[name='icon']:checked").val();
     */
 
-
-
     let choreName = $('#choreForm option:selected').text();
     console.log(choreName);
     let imageURL;
@@ -86,12 +84,10 @@ $(document).ready(function() {
     console.log(time);
     time = time.toString();
 
-    ga('send', 'event', 'Add Chore', 'submit', time, {
-      hitCallback: function() {
-        alert("successfully sent!");
-      }
+    gtag('event', 'submit', {
+      'event_category': 'addChore',
+      'event_label': time
     });
-  });
 });
 
 
