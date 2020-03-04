@@ -70,10 +70,11 @@ $(document).ready(function() {
     t2 = new Date().getTime();
     time = t2 - t1;
     console.log(time);
+    time.toString();
 
     gtag('event', 'added chore', {
       'event_category': 'addChore',
-      'value': time
+      'event_label': time
     });
   });
 });
