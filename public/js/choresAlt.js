@@ -1,6 +1,9 @@
 'use strict';
 
 var choreList;
+var time = 0;
+var t1;
+var t2;
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
   $.get("../chores.json", function(data) {
@@ -14,6 +17,7 @@ $(document).ready(function() {
 
   $("#addChoreButton").click(function() {
     $("#addChore").modal("show");
+    t1 = new Date().getTime();
   });
 
   $(".removeChore").click(function () {
@@ -62,6 +66,15 @@ $(document).ready(function() {
     highlightChores(choreList);
 
     $("#addChore").modal("hide");
+
+    t2 = new Date().getTime();
+    time = t2 - t1;
+    console.log(time);
+
+    gtag('event', 'added chore', {
+      'event_category': 'addChore',
+      'value': time
+    });
   });
 });
 

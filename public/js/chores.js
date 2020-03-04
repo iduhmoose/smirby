@@ -82,11 +82,10 @@ $(document).ready(function() {
     t2 = new Date().getTime();
     time = t2 - t1;
     console.log(time);
-    time = time.toString();
 
-    gtag('event', 'submit', {
+    gtag('event', 'added chore', {
       'event_category': 'addChore',
-      'event_label': time
+      'value': time
     });
   });
 });
