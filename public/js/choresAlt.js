@@ -11,9 +11,9 @@ $(document).ready(function() {
     highlightChores(choreList);
   });
 
-/*  $.getJSON("https://api.myjson.com/bins/d49qw", function(json) {
-    highlightChores(json);
-  });*/
+  $(".close").click(function() {
+    t1 = 0;
+  });
 
   $("#addChoreButton").click(function() {
     $("#addChore").modal("show");
