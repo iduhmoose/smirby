@@ -49,6 +49,7 @@ hbs.registerHelper('if_eq', function(a, b, opts) {
     return opts.inverse(this);
   }
 });
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());

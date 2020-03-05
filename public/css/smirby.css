@@ -6,6 +6,16 @@ header {
 body {
   margin-bottom: 69px;
 }
+
+body.login {
+  background-image: -webkit-linear-gradient(330deg, #96deda 0%, #50c9c3 100%);
+  background-image: -o-linear-gradient(330deg, #96deda 0%, #50c9c3 100%);
+  background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+}
+
+.login button {
+  border: 0;
+}
 header > h1 {
   padding: 1rem 6rem 0 6rem;
 }
@@ -60,9 +70,17 @@ section {
 }
 
 .myChores {
-  background-color: #F2F2F2;
+  background-color: #77B5AF;
   text-align: center;
   padding: 1rem;
+}
+
+.myChores > h3 {
+  color: white;
+}
+
+.myChores > p {
+  color: white;
 }
 
 .chore-card {
@@ -110,7 +128,7 @@ hr.divider {
 }
 
 .today {
-  border: 1px solid black;
+  border: 1px solid #39495C;
   border-radius: 0.8em;
   -moz-border-radius: 0.8em;
   -webkit-border-radius: 0.8em;
@@ -126,13 +144,15 @@ hr.divider {
 }
 
 .active-date {
-  background: #EDEDED;
+  background: #77B5AF;
   border-radius: 0.8em;
   -moz-border-radius: 0.8em;
   -webkit-border-radius: 0.8em;
   display: inline-block;
   line-height: 1.6em;
   width: 1.6em;
+  color:white;
+
 }
 
 .footer {
@@ -247,13 +267,15 @@ hr.divider {
   text-align: center;
   background: #FFFFFF;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0);
-  border-radius: 3px;
+  border-radius: 5px;
   margin: auto;
+  margin-top:1rem;
 }
 
-#selected {
-  border: 2px solid #04B315 !important;
+.selected {
+  background:#77B5AF !important;
   margin: 1rem 1rem;
+  color: white;
 }
 
 #trade-buttons {
@@ -262,8 +284,9 @@ hr.divider {
 }
 
 .signUp{
-  background:#04B315 !important;
+  background:#39495C !important;
   font-weight: 700;
+  color: white;
 }
 
 button {
@@ -282,7 +305,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
+  background-color: #c3f1ed;
   height: 40px;
   width: 80%;
   margin: auto;
@@ -290,6 +313,7 @@ button {
   text-align: left;
   padding: 0 1rem 0 1rem;
   border-radius: 5px;
+  border: 1.5px solid white;
 }
 
 .login-box p {

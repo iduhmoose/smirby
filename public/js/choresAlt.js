@@ -73,7 +73,7 @@ $(document).ready(function() {
     time.toString();
 
     gtag('event', 'added chore', {
-      'event_category': 'addChore',
+      'event_category': 'addChoreAlt',
       'event_label': time
     });
   });
