@@ -10,22 +10,20 @@
 <body>
 
 	<header>
-		<img id="myProfile" class="profile-icon" src="/images/profile.png" alt="profile">
+		<img id="myProfile" class="profile-icon" src="/images/profile1.png" alt="profile">
 		<h1 id="greeting">Good Morning, Lisa!</h1>
 			<!--<img class="settings" src="/images/settings.png" alt="settings">-->
 	</header>
-
-	<div class="container-fluid" style="text-align:center;">
-
-		<hr>
-
+	<hr>
+	<div class="container-fluid homebody">
 		<img class="big-icon" src="/images/trash.svg" alt="icon">
 		<h3 id="reminder">Remember to take out the trash</h3>
 		<p id="deadline">Due in 2 days</p>
 		<p id="reason">Your roommates are counting on you!</p>
-		<button class="options" type="button" name="button" onclick="window.location.href = '/calendar'">Later</button>
-		<button class="options selected" type="button" name="button" onclick="window.location.href = '/calendar'">Done</button>
-
+		<div style="margin-bottom: 1rem;">
+			<button class="options" type="button" name="button" onclick="window.location.href = '/calendar'">Later</button>
+			<button class="options selected" type="button" name="button" onclick="window.location.href = '/calendar'">Done</button>
+		</div>
 	</div>
 
 	{{> nav}}

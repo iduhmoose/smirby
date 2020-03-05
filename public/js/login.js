@@ -4,7 +4,7 @@ $(document).ready(function() {
     $("#login").css('display', 'block');
   })
 
-  $("#intro > button:first").click(function() {
+  $("#intro > button:nth-child(2)").click(function() {
     $("#intro").css('display', 'none');
     $("#signup").css('display', 'block');
   })

@@ -85,7 +85,7 @@ $(document).ready(function() {
     time.toString();
 
     gtag('event', 'added chore', {
-      'event_category': 'addChore',
+      'event_category': 'addChoreAlt',
       'event_label': time
     });
   });
@@ -94,7 +94,7 @@ $(document).ready(function() {
 
 function createChore(chore) {
   let table = "<table class='table table-borderless' style='margin: 0 0 0 0.5rem;'><tbody><tr><td scope='row'><span>S</span></td><td><span class=''>M</span></td><td><span class=''>T</span></td><td><span class=''>W</span></td><td><span class=''>T</span></td><td><span class=''>F</span></td><td><span>S</span></td></tr></tbody></table>";
-  let assign = "<p class='assigned'>Assigned to:<img class='profile-chores' src='/images/profile.png' alt='profile'><img class='profile-chores' src='/images/profile.png' alt='profile'><img class='profile-chores' src='/images/profile.png' alt='profile'><img class='profile-chores' src='/images/profile.png' alt='profile'></p>";
+  let assign = "<p class='assigned'>Assigned to:<img class='profile-chores' src='/images/profile1.png' alt='profile'><img class='profile-chores' src='/images/profile2.png' alt='profile'><img class='profile-chores' src='/images/profile3.png' alt='profile'><img class='profile-chores' src='/images/profile4.png' alt='profile'></p>";
 
   let element = "<div class='chore'><div class='chore-card-2'><img class='removeChore' src='/images/close.svg' alt='close' width='20'><img class='profile-icon' src='" + chore.iconURL + "' alt='clean'><div id='"+ chore.id +"'><p><strong>"+ chore.name + "</strong></p>"+ table + assign + "</div></div><hr></div>";
   $(".newChore").append(element);

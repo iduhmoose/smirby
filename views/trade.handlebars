@@ -10,7 +10,7 @@
 <body>
 
   <header>
-		<img id="myProfile" class="profile-icon" src="/images/profile.png" alt="profile">
+		<img id="myProfile" class="profile-icon" src="/images/profile1.png" alt="profile">
 		<h1>Trade</h1>
 		<!--<img class="settings" src="/images/settings.png" alt="settings">-->
 	</header>
@@ -28,14 +28,14 @@
     {{#each chores}}
 			{{#if_eq assigned 'A'}}
 		  	<div class="trade-card">
-					<img class="profile-icon" src="/images/profile.png" alt="clean">
+					<img class="profile-icon" src="/images/profile1.png" alt="clean">
 					<div id="{{id}}">
 						<p><strong>{{name}}</strong></p>
 		      </div>
 		    </div>
 			{{/if_eq}}
 		{{/each}}
-		<div style="text-align: center;">
+		<div style="text-align: center; margin-top:1rem;">
 			<button class="options" type="button" name="button">Nevermind</button>
 			<button class="options selected" type="button" name="button">Trade</button>
 		</div>
@@ -46,14 +46,16 @@
 		<p>Select the following trade requests to decline or accept them.</p>
     {{#each chores}}
   		<div class="trade-card">
-				<img class="profile-icon" src="/images/profile.png" alt="clean">
+				<img class="profile-icon" src="/images/profile2.png" alt="clean">
 				<div id="{{id}}">
   				<p><strong>{{name}}</strong></p>
         </div>
     </div>
 		{{/each}}
-		<button class="options" id="decline" type="button" name="button">Decline</button>
-		<button class="options selected" type="button" name="button">Accept</button>
+		<div style="margin-top:1rem;">
+			<button class="options" id="decline" type="button" name="button">Decline</button>
+			<button class="options selected" type="button" name="button">Accept</button>
+		</div>
 	</div>
 
 	{{> nav}}

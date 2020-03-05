@@ -126,21 +126,21 @@ function displayChores(day) {
 
       if ($.inArray("B", choreList[i]['assigned']) != -1) {
         $(".b h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile2.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".b").append(name);
         $(".b").append(div);
       }
 
       if ($.inArray("C", choreList[i]['assigned']) != -1) {
         $(".c h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile3.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".c").append(name);
         $(".c").append(div);
       }
 
       if ($.inArray("D", choreList[i]['assigned']) != -1) {
         $(".d h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile4.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".d").append(name);
         $(".d").append(div);
       }
@@ -153,21 +153,21 @@ function displayChores(day) {
 
       if ($.inArray("B", choreList[i]['assigned']) != -1) {
         $(".b h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile2.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".b").append(name);
         $(".b").append(div);
       }
 
       if ($.inArray("C", choreList[i]['assigned']) != -1) {
         $(".c h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile3.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".c").append(name);
         $(".c").append(div);
       }
 
       if ($.inArray("D", choreList[i]['assigned']) != -1) {
         $(".d h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile4.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".d").append(name);
         $(".d").append(div);
       }
@@ -180,21 +180,21 @@ function displayChores(day) {
 
       if ($.inArray("B", choreList[i]['assigned']) != -1) {
         $(".b h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile2.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".b").append(name);
         $(".b").append(div);
       }
 
       if ($.inArray("C", choreList[i]['assigned']) != -1) {
         $(".c h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile3.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".c").append(name);
         $(".c").append(div);
       }
 
       if ($.inArray("D", choreList[i]['assigned']) != -1) {
         $(".d h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile4.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".d").append(name);
         $(".d").append(div);
       }
@@ -206,21 +206,21 @@ function displayChores(day) {
       }
       if ($.inArray("B", choreList[i]['assigned']) != -1) {
         $(".b h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile2.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".b").append(name);
         $(".b").append(div);
       }
 
       if ($.inArray("C", choreList[i]['assigned']) != -1) {
         $(".c h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile3.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".c").append(name);
         $(".c").append(div);
       }
 
       if ($.inArray("D", choreList[i]['assigned']) != -1) {
         $(".d h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile4.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".d").append(name);
         $(".d").append(div);
       }
@@ -233,21 +233,21 @@ function displayChores(day) {
 
       if ($.inArray("B", choreList[i]['assigned']) != -1) {
         $(".b h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile2.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".b").append(name);
         $(".b").append(div);
       }
 
       if ($.inArray("C", choreList[i]['assigned']) != -1) {
         $(".c h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile3.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".c").append(name);
         $(".c").append(div);
       }
 
       if ($.inArray("D", choreList[i]['assigned']) != -1) {
         $(".d h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile4.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".d").append(name);
         $(".d").append(div);
       }
@@ -259,21 +259,21 @@ function displayChores(day) {
       }
       if ($.inArray("B", choreList[i]['assigned']) != -1) {
         $(".b h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile2.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".b").append(name);
         $(".b").append(div);
       }
 
       if ($.inArray("C", choreList[i]['assigned']) != -1) {
         $(".c h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile3.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".c").append(name);
         $(".c").append(div);
       }
 
       if ($.inArray("D", choreList[i]['assigned']) != -1) {
         $(".d h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile4.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".d").append(name);
         $(".d").append(div);
       }
@@ -286,21 +286,21 @@ function displayChores(day) {
 
       if ($.inArray("B", choreList[i]['assigned']) != -1) {
         $(".b h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile2.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".b").append(name);
         $(".b").append(div);
       }
 
       if ($.inArray("C", choreList[i]['assigned']) != -1) {
         $(".c h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile3.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".c").append(name);
         $(".c").append(div);
       }
 
       if ($.inArray("D", choreList[i]['assigned']) != -1) {
         $(".d h3").css('display','block');
-        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
+        let div = "<div class='chore-card-2'><img class='profile-icon' src='/images/profile4.png' alt='profile'><p>" + choreList[i]['name']+"</p><img class='remind' style='width: 8vw;' src='/images/remind.svg' alt='remind'></div>";
         $(".d").append(name);
         $(".d").append(div);
       }
