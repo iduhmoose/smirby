@@ -37,13 +37,13 @@ $(document).ready(function() {
   }
 
   if (month == 0) {
-    $("#month").text("JANUARY");
+    $("#month").text("January");
   } else if (month == 1) {
-    $("#month").text("FEBRUARY");
+    $("#month").text("February");
   } else if (month == 2) {
-    $("#month").text("MARCH");
+    $("#month").text("March");
   } else if (month == 3) {
-    $("#month").text("APRIL");
+    $("#month").text("April");
   }
   sunday = date - day;
 

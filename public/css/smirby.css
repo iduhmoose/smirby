@@ -282,6 +282,7 @@ hr.divider {
   border:0;
   color:white;
 }
+
 .selected {
   background:#77B5AF !important;
   color: white;
@@ -360,8 +361,9 @@ tr.freq label {
 }
 
 #choreForm input[type="checkbox"]:checked+label {
-  background-color: #E7E7E7;
+  background-color: #77B5AF;
   border-radius: 5px;
+  color: white;
 }
 
 #choreForm img {
@@ -387,4 +389,35 @@ tr.freq label {
   align-items: center;
   justify-content: space-between;
   text-align:center;
+}
+
+#sendview button {
+  height: 34px;
+  text-align: center;
+  border-radius: 5px;
+  margin: auto;
+}
+
+#sendview button:nth-child(1) {
+  background: #E18A77;
+  color:white;
+  border:0;
+  margin-bottom: 1rem;
+}
+
+#sendview button:nth-child(2) {
+  background: #77B5AF;
+  color:white;
+  border:0;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-weight: 700;
+}
+
+header img:nth-child(2) {
+  float: left;
+  margin-left: 1rem;
+  display: none;
 }

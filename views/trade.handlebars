@@ -11,7 +11,8 @@
 
   <header>
 		<img id="myProfile" class="profile-icon" src="/images/profile1.png" alt="profile">
-		<h1>Trade</h1>
+		<img id="back" class="profile-icon" src="/images/back.png" alt="back">
+		<h1>TRADE</h1>
 		<!--<img class="settings" src="/images/settings.png" alt="settings">-->
 	</header>
 	<hr>
@@ -23,7 +24,7 @@
 
 
 	<div class="container send-container" style="display:none;">
-		<p>My Chores</p>
+		<p><strong>My Chores</strong></p>
 		<p>Select the chores you would like to trade with someone else!</p>
     {{#each chores}}
 			{{#if_eq assigned 'A'}}
@@ -42,7 +43,6 @@
 	</div>
 
 	<div class="container trade-container" style="display:none;">
-		<button class="send" type="button" name="button">Go Back</button>
 		<p>Select the following trade requests to decline or accept them.</p>
     {{#each chores}}
   		<div class="trade-card">
