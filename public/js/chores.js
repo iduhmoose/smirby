@@ -138,37 +138,37 @@ function highlightChores(json) {
     for (let j in currentChore["frequency"]) {
        if (currentChore["frequency"][j] == "Sun") {
          id = "#"+id+" td:nth-child(1) span";
-         $(id).addClass("active-date today");
+         $(id).addClass("active-date");
          id = currentChore["id"];
        }
        if (currentChore["frequency"][j] == "Mon") {
          id = "#"+id+" td:nth-child(2) span";
-         $(id).addClass("active-date today");
+         $(id).addClass("active-date");
          id = currentChore["id"];
        }
        if (currentChore["frequency"][j] == "Tue") {
          id = "#"+id+" td:nth-child(3) span";
-         $(id).addClass("active-date today");
+         $(id).addClass("active-date");
          id = currentChore["id"];
        }
        if (currentChore["frequency"][j] == "Wed") {
          id = "#"+id+" td:nth-child(4) span";
-         $(id).addClass("active-date today");
+         $(id).addClass("active-date");
          id = currentChore["id"];
        }
        if (currentChore["frequency"][j] == "Thu") {
          id = "#"+id+" td:nth-child(5) span";
-         $(id).addClass("active-date today");
+         $(id).addClass("active-date");
          id = currentChore["id"];
        }
        if (currentChore["frequency"][j] == "Fri") {
          id = "#"+id+" td:nth-child(6) span";
-         $(id).addClass("active-date today");
+         $(id).addClass("active-date");
          id = currentChore["id"];
        }
        if (currentChore["frequency"][j] == "Sat") {
          id = "#"+id+" td:nth-child(7) span";
-         $(id).addClass("active-date today");
+         $(id).addClass("active-date");
          id = currentChore["id"];
        }
     }

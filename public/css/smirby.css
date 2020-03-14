@@ -8,9 +8,7 @@ body {
 }
 
 body.login {
-  background-image: -webkit-linear-gradient(330deg, #96deda 0%, #50c9c3 100%);
-  background-image: -o-linear-gradient(330deg, #96deda 0%, #50c9c3 100%);
-  background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 .login button {
@@ -156,19 +154,20 @@ hr.divider {
 }
 
 .footer {
-  background-color: white;
+  background-color: #39495C;
   box-shadow: 0px 0px 20px #d2d2d2;
   padding: 0.5rem 1rem;
+  color: white;
 }
 
 .footer img {
-  opacity: 0.3;
+  filter: invert(1);
 }
 
 .navbar a {
   text-align:center;
   text-decoration:none;
-  color: #676767;
+  color: white;
 }
 
 .navbar p {
@@ -283,6 +282,11 @@ hr.divider {
   color:white;
 }
 
+#add {
+  background-color:#E18A77;
+  border: none;
+}
+
 .selected {
   background:#77B5AF !important;
   color: white;
@@ -295,7 +299,7 @@ hr.divider {
 }
 
 .signUp{
-  background:#39495C !important;
+  background:#77B5AF !important;
   font-weight: 700;
   color: white;
 }
@@ -316,7 +320,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #c3f1ed;
   height: 40px;
   width: 80%;
   margin: auto;
