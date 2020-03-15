@@ -156,7 +156,7 @@ hr.divider {
 .footer {
   background-color: #39495C;
   box-shadow: 0px 0px 20px #d2d2d2;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   color: white;
 }
 
@@ -423,4 +423,9 @@ header img:nth-child(2) {
   float: left;
   margin-left: 1rem;
   display: none;
+}
+
+header {
+  background-color: #39495C;
+  color:white;
 }
